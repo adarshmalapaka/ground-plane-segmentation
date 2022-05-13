@@ -7,11 +7,11 @@ Implementation of detecting the drivable path in the ground plane for a mobile r
 
 
 ## Team Members:
-* Adarsh Malapaka (118119625)
-* Kumara Ritvik Oruganti (117368963)
-* Sai Sandeep Adapa (118411460)
-* Sparsh Bhogavilli (117552515)
-* Venkata Sai Ram Polina (118436579)
+* Adarsh Malapaka (118119625) amalapak@terpmail.umd.edu
+* Kumara Ritvik Oruganti (117368963) okritvik@terpmail.umd.edu
+* Sai Sandeep Adapa (118411460) sadapa@umd.edu
+* Sparsh Bhogavilli (117552515) sbhogavi@umd.edu
+* Venkata Sai Ram Polina (118436579) sairamp@umd.edu
 
 <!-- ## Required Libraries: 
 * cv2 : To add arrows, lines or circles in the map at the desired coordinates.
