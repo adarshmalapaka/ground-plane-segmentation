@@ -1,4 +1,4 @@
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Drivable Ground Path Detection Using Semantic Segmentation
 
 Project - 04 for the course, 'ENPM673 - Perception for Autonomous Robots' at the University of Maryland, College Park.
@@ -7,51 +7,65 @@ Implementation of detecting the drivable path in the ground plane for a mobile r
 
 
 ## Team Members:
-* Adarsh Malapaka (118119625) amalapak@terpmail.umd.edu
-* Kumara Ritvik Oruganti (117368963) okritvik@terpmail.umd.edu
-* Sai Sandeep Adapa (118411460) sadapa@umd.edu
-* Sparsh Bhogavilli (117552515) sbhogavi@umd.edu
-* Venkata Sai Ram Polina (118436579) sairamp@umd.edu
+* Adarsh Malapaka (amalapak@terpmail.umd.edu)
+* Kumara Ritvik Oruganti (okritvik@terpmail.umd.edu)
+* Sai Sandeep Adapa (sadapa@umd.edu)
+* Sparsh Bhogavilli (sbhogavi@umd.edu)
+* Venkata Sai Ram Polina (sairamp@umd.edu)
 
-<!-- ## Required Libraries: 
-* cv2 : To add arrows, lines or circles in the map at the desired coordinates.
-* time: To calculate the running time for the A* algorithm.
-* numpy: To define the obstacle map matrix
-* argparse: To parse command line arguments
-* random: To generate random nodes
-* copy: To create copy of lists -->
+## Pipeline:
+<p align="center">
+      <img src="https://user-images.githubusercontent.com/40534801/168429360-9f0d550e-13b6-49d1-9917-34d98a8ec8ef.png" width="80%">
+</p>
 
-<!-- ## Dataset: -->
-  
+## Model Results:
 
-<!-- Obstacle Map (Known)    |  Modified RRT* Tree Expansion | Modified RRT* Path
-:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/40534801/167329665-c65a21f8-3b64-4925-8e94-7a847503f285.png" width="100%"> | <img src="https://user-images.githubusercontent.com/40534801/167330587-facbd5db-6b99-4972-b291-59e6340eb1c3.png" width="100%"> | <img src="https://user-images.githubusercontent.com/40534801/167330631-e732874c-8a28-4649-8a1b-71ff50090f0c.png" width="100%">
+### Training Curves
 
-Optimized Modified RRT* Path   |  Obstacle Map - Known (Blue) & Unknown (Green) | Optimized Re-planned Path
-:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/40534801/167331983-65292dcd-b260-40a0-8279-db557a60bf40.png" width="100%"> | <img src="https://user-images.githubusercontent.com/40534801/167332002-ada4a3d2-35bf-4e24-bc73-29de6ac63951.png" width="100%"> | <img src="https://user-images.githubusercontent.com/40534801/167332042-98f6c1f4-d4c0-490d-a6f5-b5aa75e53d2e.png" width="100%">
+Train Loss v/s Epoch    |  Train IOU v/s Epoch |
+:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/40534801/168428961-2c033e76-cc1c-4369-85c5-62d0e5b3ea99.png" width="90%"> | <img src="https://user-images.githubusercontent.com/40534801/168428928-c37d4d93-c065-4002-8ebd-4b75b6522282.png" width="90%"> 
+
+Validation Loss v/s Epoch    |  Validation IOU v/s Epoch |
+:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/40534801/168428991-ceec26e5-aed2-4878-9afa-50297e43de7e.png" width="90%"> | <img src="https://user-images.githubusercontent.com/40534801/168428974-ed50f9d6-4c23-4d05-ae7d-155892d6449e.png" width="90%"> 
 
 
-## For Map 02:
-  [co-ordinates with respect to bottom left corner origin of the window]
-  
-	Start-Node: (10, 10)
+### Cross-Validation
 
-	Goal-Node:  (350, 150)
-	
-	Robot Clearance: 5
-
-Obstacle Map (Known)    |  Modified RRT* Tree Expansion | Modified RRT* Path
-:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/40534801/167329737-44ea40fd-6255-4a18-9f05-a2e38ca3b333.png" width="100%"> | <img src="https://user-images.githubusercontent.com/40534801/167331089-978f5144-44b3-477f-b77b-fd82c650bfba.png" width="100%"> | <img src="https://user-images.githubusercontent.com/40534801/167331109-de378cf9-1e99-447b-a2e0-cd81c54cd3b5.png" width="100%">
-
-Optimized Modified RRT* Path   |  Obstacle Map - Known (Blue) & Unknown (Green) | Optimized Re-planned Path
-:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/40534801/167332117-9a107ef2-3c50-446f-8900-190e4f0c8003.png" width="100%"> | <img src="https://user-images.githubusercontent.com/40534801/167332146-adc8588a-e6a3-4d52-a649-8c60c37872fd.png" width="100%"> | <img src="https://user-images.githubusercontent.com/40534801/167332180-f4419940-7bcf-42de-a14d-5c9901b8b91b.png" width="100%">
+| Metric        | Fold-1           | Fold-2           | Fold-3           | Average           |
+| ------------- |:----------------:|:----------------:|:----------------:|:-----------------:|
+| Test IOU      | 0.998            | 0.998            | 0.999            | 0.9983            | 
 
 
-#### Note: 
+### Test Results
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/40534801/168428335-ba6d5099-b896-4456-989c-52e5f2736489.png" width="60%">
+ </p>
+<p align="center">
+The pillar is classified as Non-drivable
+</p>
+
+Detected Ground (Feet labeled as non-drivable)   |  Detected Ground (Floor-mat labeled as drivable) |
+:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/40534801/168384097-9191c43b-489d-45aa-9bf9-004601714acf.jpeg" width="70%"> | <img src="https://user-images.githubusercontent.com/40534801/168384728-e9b04c0b-0843-4484-a711-4cd589703f54.jpeg" width="70%"> 
+
+
+## Dataset:
+ 
+### Locations
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/40534801/168385268-8721eca2-483d-4771-bc03-8014817b0a3f.jpg" width="550" height="300">
+  </p>
+
+### Collection Methodology
+
+ Robot for Data Collection    |  Data Collection in Martin Hall |
+:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/40534801/168385473-9119bcf1-fa4e-4302-af1a-4d26837d4262.jpeg" width="40%"> | <img src="https://user-images.githubusercontent.com/40534801/168385504-5f915cdd-ff47-4ac3-909a-8bd61fdbc515.jpeg" width="50%"> 
+
+<!-- #### Note: 
 The shapes in the map including the outer boudary walls have been bloated by robot clearance amount on all sides.
   
 ## Running the Code:
