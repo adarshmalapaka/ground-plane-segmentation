@@ -54,6 +54,7 @@ The pillar is classified as Non-drivable
 #### Deploying on Mobile Robot
 - A camera is mounted on a mobile robot platform & its stream is transferred to a laptop using RaspberryPi.
 - On the laptop, semantic segmentation to detect drivable path is done by running the command `python3 inference_laptop.py` from the folder `./Codes`.
+- The below images are two samples of the same.
 
 Detected Ground (Feet labeled as non-drivable)   |  Detected Ground (Floor-mat labeled as drivable) |
 :-------------------------:|:-------------------------:
