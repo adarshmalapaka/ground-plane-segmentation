@@ -19,7 +19,7 @@ Implementation of detecting the drivable path in the ground plane for a mobile r
 </p>
 
 ## Training:
-- For details on training & testing the model on a machine with GPU, check out `./Codes/training/usage.md` file [link](https://github.com/adarshmalapaka/ground-plane-segmentation/blob/main/Codes/training/usage.md).
+- For details on training & testing the model on a machine with GPU, check out `./Codes/training/usage.md` file - [link](https://github.com/adarshmalapaka/ground-plane-segmentation/blob/main/Codes/training/usage.md).
 
 ## Model Results:
 
@@ -51,6 +51,10 @@ Validation Loss v/s Epoch    |  Validation IOU v/s Epoch |
 The pillar is classified as Non-drivable
 </p>
 
+#### Deploying on Mobile Robot
+- A camera is mounted on a mobile robot platform & its stream is transferred to a laptop using RaspberryPi.
+- On the laptop, semantic segmentation to detect drivable path is done by running the command `python3 inference_laptop.py` from the folder `./Codes`.
+
 Detected Ground (Feet labeled as non-drivable)   |  Detected Ground (Floor-mat labeled as drivable) |
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/40534801/168384097-9191c43b-489d-45aa-9bf9-004601714acf.jpeg" width="70%"> | <img src="https://user-images.githubusercontent.com/40534801/168384728-e9b04c0b-0843-4484-a711-4cd589703f54.jpeg" width="70%"> 
@@ -59,10 +63,6 @@ Detected Ground (Feet labeled as non-drivable)   |  Detected Ground (Floor-mat l
 <p align="center">
         <img src="https://user-images.githubusercontent.com/40200916/168886921-54bb66d2-192d-4da8-83fb-e1354b50e6fd.png" width = 100%>
 </p>
-
-#### Deploying on Mobile Robot
-- A camera is mounted on a mobile robot platform & its stream is transferred to a laptop using RaspberryPi.
-- On the laptop, semantic segmentation to detect drivable path is done by running the command `python3 inference_laptop.py` from the folder `./Codes`.
 
 ## Dataset:
  
