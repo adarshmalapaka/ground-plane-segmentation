@@ -55,6 +55,7 @@ The pillar is classified as Non-drivable
 - A camera is mounted on a mobile robot platform & its stream is transferred to a laptop using RaspberryPi.
 - On the laptop, semantic segmentation to detect drivable path is done by running the command `python3 inference_laptop.py` from the folder `./Codes`.
 - The below images are two samples of the same.
+- [Here](https://youtu.be/34u9Obz_LbE) and [here](https://youtu.be/tdF0aCcTwDY) are the video links of the model inferencing from laptop using the camera stream from robot. 
 
 Detected Ground (Feet labeled as non-drivable)   |  Detected Ground (Floor-mat labeled as drivable) |
 :-------------------------:|:-------------------------:
@@ -77,6 +78,40 @@ Detected Ground (Feet labeled as non-drivable)   |  Detected Ground (Floor-mat l
  Robot for Data Collection    |  Data Collection in Martin Hall |
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/40534801/168385473-9119bcf1-fa4e-4302-af1a-4d26837d4262.jpeg" width="40%"> | <img src="https://user-images.githubusercontent.com/40534801/168385504-5f915cdd-ff47-4ac3-909a-8bd61fdbc515.jpeg" width="50%"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- #### Note: 
 The shapes in the map including the outer boudary walls have been bloated by robot clearance amount on all sides.
