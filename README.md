@@ -39,11 +39,13 @@ Validation Loss v/s Epoch    |  Validation IOU v/s Epoch |
 
 
 ### Test Results
+
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/40200916/168870966-cf3e101a-499f-487f-a40d-5e6efaeb9785.jpeg" width = 60%>
+	<img src="https://user-images.githubusercontent.com/40200916/168886921-54bb66d2-192d-4da8-83fb-e1354b50e6fd.png" width = 100%>
 </p>
+
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/40534801/168428335-ba6d5099-b896-4456-989c-52e5f2736489.png" width="60%">
+    <img src="https://user-images.githubusercontent.com/40534801/168428335-ba6d5099-b896-4456-989c-52e5f2736489.png" width="80%">
  </p>
 <p align="center">
 The pillar is classified as Non-drivable
