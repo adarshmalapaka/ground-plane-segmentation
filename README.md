@@ -19,7 +19,7 @@ Implementation of detecting the drivable path in the ground plane for a mobile r
 </p>
 
 ## Training:
-- For details on training & testing the model on a machine with GPU, check out `Codes/training/usage.md` file.
+- For details on training & testing the model on a machine with GPU, check out `./Codes/training/usage.md` file.
 
 ## Model Results:
 
