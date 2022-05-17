@@ -39,7 +39,9 @@ Validation Loss v/s Epoch    |  Validation IOU v/s Epoch |
 
 
 ### Test Results
-
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/40200916/168870966-cf3e101a-499f-487f-a40d-5e6efaeb9785.jpeg" width = 60%>
+</p>
 <p align="center">
     <img src="https://user-images.githubusercontent.com/40534801/168428335-ba6d5099-b896-4456-989c-52e5f2736489.png" width="60%">
  </p>
