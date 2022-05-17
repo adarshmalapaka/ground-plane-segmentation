@@ -47,8 +47,14 @@ Validation Loss v/s Epoch    |  Validation IOU v/s Epoch |
 
 #### Videos
 <p align="center">
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=nTQUwghvy5Q" target="_blank">
- <img src="http://img.youtube.com/vi/nTQUwghvy5Q/mqdefault.jpg" alt="Watch the video" width="240" height="180" border="10" />
+<a href="https://youtu.be/tdF0aCcTwDY" target="_blank">
+ <img src="http://img.youtube.com/vi/tdF0aCcTwDY/mqdefault.jpg" alt="Watch the video" width="350" height="200" border="10" />
+</a>
+</p>
+
+<p align="center">
+<a href="https://youtu.be/34u9Obz_LbE" target="_blank">
+ <img src="http://img.youtube.com/vi/34u9Obz_LbE/mqdefault.jpg" alt="Watch the video" width="350" height="200" border="10" />
 </a>
 </p>
 
