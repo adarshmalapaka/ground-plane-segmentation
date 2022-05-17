@@ -5,13 +5,15 @@ Project - 04 for the course, 'ENPM673 - Perception for Autonomous Robots' at the
 
 Implementation of detecting the drivable path in the ground plane for a mobile robot in an indoor environment using Semantic Segmentation (U-Net) on a custom collected dataset on the campus of the University of Maryland, College Park.
 
-
 ## Team Members:
 * Adarsh Malapaka (amalapak@terpmail.umd.edu)
 * Kumara Ritvik Oruganti (okritvik@terpmail.umd.edu)
 * Sai Sandeep Adapa (sadapa@umd.edu)
 * Sparsh Bhogavilli (sbhogavi@umd.edu)
 * Venkata Sai Ram Polina (sairamp@umd.edu)
+
+#### Note: 
+Please contact any one of the team members (listed above) to gain access to the dataset, if you're interested!
 
 ## Pipeline:
 <p align="center">
@@ -43,6 +45,14 @@ Validation Loss v/s Epoch    |  Validation IOU v/s Epoch |
 
 ### Test Results
 
+#### Videos
+<p align="center">
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=nTQUwghvy5Q" target="_blank">
+ <img src="http://img.youtube.com/vi/nTQUwghvy5Q/mqdefault.jpg" alt="Watch the video" width="240" height="180" border="10" />
+</a>
+</p>
+
+
 #### Test results on Laptop
 <p align="center">
     <img src="https://user-images.githubusercontent.com/40534801/168428335-ba6d5099-b896-4456-989c-52e5f2736489.png" width="80%">
@@ -73,65 +83,32 @@ Detected Ground (Feet labeled as non-drivable)   |  Detected Ground (Floor-mat l
     <img src="https://user-images.githubusercontent.com/40534801/168385268-8721eca2-483d-4771-bc03-8014817b0a3f.jpg" width="550" height="300">
   </p>
 
+<details>
+<summary>Key for Depicted Locations (with number of videos recorded)</summary>
+<p align="center"> 1. Atlantic Bldg (1 video) </p>
+<p align="center"> 2. J.M. Patterson Bldg (2 videos) </p>
+<p align="center"> 3. Chem/Nuclear Bldg (1 video) </p>
+<p align="center"> 4. A.V. Williams Bldg (1 video) </p>
+<p align="center"> 5. Brendan Iribe Center (1 video) </p>
+<p align="center"> 6. Glenn Martin Hall (2 videos) </p>
+<p align="center"> 7. Plant Sciences Bldg (1 video) </p>
+<p align="center"> 8. Psychology/Biology Bldg (1 video) </p>
+<p align="center"> 9. Symons Hall (1 video) </p>
+<p align="center"> 10. Woods Hall (1 video) </p>
+<p align="center"> 11. Tydings Hall (1 video) </p>
+<p align="center"> 12. Lefrak Hall (1 video) </p>
+</details>
+
 ### Collection Methodology
 
  Robot for Data Collection    |  Data Collection in Martin Hall |
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/40534801/168385473-9119bcf1-fa4e-4302-af1a-4d26837d4262.jpeg" width="40%"> | <img src="https://user-images.githubusercontent.com/40534801/168385504-5f915cdd-ff47-4ac3-909a-8bd61fdbc515.jpeg" width="50%"> 
 
+### Video Specifications
+* Resolution: 1280 x 720 (16:9 ratio)
+* Video Duration: 5 minutes
+* Framerate: 30
+* Height of Camera: 12 cm approx (from the ground)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- #### Note: 
-The shapes in the map including the outer boudary walls have been bloated by robot clearance amount on all sides.
-  
-## Running the Code:
-
-The code map number as an argument.
-
-**Format/Syntax:**
-
-		  'python3 mod_rrt_star.py <map-argument>'
-      
-**For Map 01:**	
-  
-		  'python3 mod_rrt_star.py --map1'
-      
-**For Map 02:**	
-
-		  'python3 mod_rrt_star.py --map2'
-      
-#### Note: 
-The algorithm is dependent on the randomly generated nodes.  If the nodes are not sufficient (i.e. the path converges very quickly), the algorithm maynot find a feasible path avoiding the obstacles. Hence, it is adviced to rerun the program again.
-If the path doesn't converge, rerun the program using the above commands after pressing the ctrl+c to force quit the current run. -->
+Every 100th frame of each video was saved as an image for the dataset (1260 dataset images)
