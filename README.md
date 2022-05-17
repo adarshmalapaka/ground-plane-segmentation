@@ -18,6 +18,9 @@ Implementation of detecting the drivable path in the ground plane for a mobile r
       <img src="https://user-images.githubusercontent.com/40534801/168429360-9f0d550e-13b6-49d1-9917-34d98a8ec8ef.png" width="80%">
 </p>
 
+## Training:
+- For details on training & testing the model on a machine with GPU, check out `Codes/training/usage.md` file.
+
 ## Model Results:
 
 ### Training Curves
@@ -40,10 +43,7 @@ Validation Loss v/s Epoch    |  Validation IOU v/s Epoch |
 
 ### Test Results
 
-<p align="center">
-	<img src="https://user-images.githubusercontent.com/40200916/168886921-54bb66d2-192d-4da8-83fb-e1354b50e6fd.png" width = 100%>
-</p>
-
+#### Test results on Laptop
 <p align="center">
     <img src="https://user-images.githubusercontent.com/40534801/168428335-ba6d5099-b896-4456-989c-52e5f2736489.png" width="80%">
  </p>
@@ -55,6 +55,10 @@ Detected Ground (Feet labeled as non-drivable)   |  Detected Ground (Floor-mat l
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/40534801/168384097-9191c43b-489d-45aa-9bf9-004601714acf.jpeg" width="70%"> | <img src="https://user-images.githubusercontent.com/40534801/168384728-e9b04c0b-0843-4484-a711-4cd589703f54.jpeg" width="70%"> 
 
+#### Testing on Jetson TX2
+<p align="center">
+        <img src="https://user-images.githubusercontent.com/40200916/168886921-54bb66d2-192d-4da8-83fb-e1354b50e6fd.png" width = 100%>
+</p>
 
 ## Dataset:
  
