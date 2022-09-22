@@ -13,7 +13,7 @@ Implementation of detecting the drivable path in the ground plane for a mobile r
 * Venkata Sai Ram Polina (sairamp@umd.edu)
 
 #### Note: 
-Please contact any one of the team members (listed above) to gain access to the dataset, if you're interested!
+Please contact any one of the team members (listed above) to gain access to the [dataset](https://drive.google.com/drive/folders/16BNODe_qVlgKhFiYIx_n6eobk5GPRHp9?usp=sharing), if you're interested!
 
 ## Pipeline:
 <p align="center">
@@ -83,7 +83,7 @@ Detected Ground (Feet labeled as non-drivable)   |  Detected Ground (Floor-mat l
 </p>
 
 ## Dataset:
- 
+
 ### Locations
   <p align="center">
     <img src="https://user-images.githubusercontent.com/40534801/168385268-8721eca2-483d-4771-bc03-8014817b0a3f.jpg" width="550" height="300">
